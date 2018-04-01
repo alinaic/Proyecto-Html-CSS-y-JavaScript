@@ -1,0 +1,72 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+table { 
+	border: medium solid #6B002A;
+} 
+
+td, th { 
+	font-family: Arial;
+	border: thin dotted blue;
+} 
+
+caption { 
+	font-style: italic;
+}
+
+label {
+	font-weight: bold;
+}
+
+.empresa {
+	margin-left: 8px;
+}
+
+.nif {
+	margin-left: 41px;
+}
+
+.direccion {
+	margin-left: 3px;
+}
+
+.telefono {
+	margin-left: 11px;
+}
+
+.email {
+		margin-left: 22px;
+}
+
+.registrar {
+	margin-left: 80px;
+}
+
+#wrapper {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<title>Alina Iuliana Caia</title>
+		<script src="../js/funciones.js"></script>
+		<link rel="stylesheet" href="../css/styles.css"/>
+		<meta charset="utf-8">
+	
+	</head>
+
+	<body>
+
+		<div id "wrapper">
+
+			<ul>
+			  <li><a href="../index.html">Home</a></li>
+			  <li><a href="./facturas.html">Facturas</a></li>
+			  <li><a href="./clientes.html">Clientes</a></li>
+			  <li><a href="./producto.html">Producto</a></li>
+			  <li><a href="./proveedor.html">Proveedor</a></li>
+			</ul>
+		
+		</div>
+
+		<h3>Proyecto de HTML, CSS y JavaScript</h3>
+		
+		<form class="frm"> 
+			<div> 
+				<label for="empresa">Empresa:</label>
+				<input class="empresa" type="text" id="empresa" name="empresa" size=35 maxlength=100> 
+			</div> 
+
+			<div> 
+				<label for="nif">NIF:</label>
+				<input class="nif" type="text" id="nif" name="nif" maxlength=20> 
+			</div> 
+
+			<div> 
+				<label for="direccion">Dirección:</label>
+				<input class="direccion" type="text" id="direccion" name="direccion" size=35 maxlength=100> 
+			</div>
+
+			<div> 
+				<label for="localidad">Localidad:</label>
+				<input type="text" id="localidad" name="localidad" size=35 maxlength=100> 
+			</div>
+
+			<div> 
+				<label for="telefono">Teléfono:</label>
+				<input class="telefono" type="number" id="telefono" name="telefono" maxlength=20> 
+			</div>
+
+			<div> 
+				<label for="email">E-mail:</label>
+				<input class="email" type="text" id="email" name="email" size=35 maxlength=50> 
+			</div>
+			
+		</form>
+		<br>
+		<button type="button" class="registrar" id="registrar" onClick="registrar()" value='Registrar'>Registrar</button>
+		<button type="button" id="guardarCambios" disabled=true onClick="guardarCambios()">Guardar Cambios</button>
+		<button type="button" id="cancelar" disabled=true onClick="cancelar()">Cancelar</button>
+		
+		<h1>Listado de Proveedores</h1>
+
+		<table id="miTabla" onLoad="buildTable()">
+			<thead>	
+			  <tr>
+				<th>Empresa</th>
+				<th>NIF</th>
+				<th>Dirección</th>
+				<th>Localidad</th>
+				<th>Telefono</th>
+				<th>E-mail</th>
+				<th>Editar</th>
+				<th>Eliminar</th>
+			  </tr>
+			</thead>
+	
+			<tbody id="tableContactBody">
+			</tbody>
+			
+		</table>
+		
+		<br><br><br>
+		
+		<footer>&copy;&nbsp;Alina Iuliana Caia</footer>
+
+	</body>
+
+</html>
